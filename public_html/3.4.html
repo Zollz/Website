@@ -26,24 +26,36 @@
         }
 
         nav {
-            font-weight: bold
+            font-weight: bold;
+        }
+
+        nav.right{
+            float:right;
+            width: 33%
+        }
+
+        main.left{
+            float:left;
+            width: 66%
         }
 
         .home {
             border: solid 15px lime;
             background-color: lime;
-            text-decoration: none
+            text-decoration: none;
+            line-height: 50px;
         }
 
         .home:hover{
-        color: yellow;
+            color: yellow;
             font-style: italic
         }
 
         .service {
             border: solid 15px lime;
             background-color: lime;
-            text-decoration: none
+            text-decoration: none;
+            line-height: 50px;
         }
 
         .service:hover {
@@ -54,14 +66,15 @@
         .contact {
             border: solid 15px lime;
             background-color: lime;
-            text-decoration: none
+            text-decoration: none;
+            line-height: 50px;
         }
 
         .contact:hover{
             color:yellow;
             font-style:italic
         }
-        
+
         header{
             background-image: url(banner.jpg);
             background-size: cover;
@@ -73,7 +86,7 @@
             font-family: Georgia, "Times New Roman";
             height: 100px;
         }
-        
+
         h1.title1{
             background-image: url(banner.jpg);
             background-size: cover;
@@ -105,10 +118,15 @@
             font-weight: bold
         }
 
+        ul.menu{
+            list-style-type: none;
+        }
+
         footer {
             font-style: italic;
             font-size: 0.75em;
-            color: #333333
+            color: #333333;
+
         }
 
         .table {
@@ -148,7 +166,7 @@
             background-color: #efefef
         }
 
-    </style>
+    </style
 </head>
 
 
@@ -157,13 +175,15 @@
     <h1 class="title1">
         Deakinsoft System Development
     </h1>
-    <nav>
-        <a href="index.html" class="home">Home</a>
-        <a href="services.html" class="service">Service</a>
-        <a href="contact.html" class="contact">Contact</a>
+    <nav class="right">
+        <ul class="menu">
+            <li><a href="index.html" class="home">Home</a></li>
+            <li><a href="services.html" class="service">Service</a></li>
+            <li><a href="contact.html" class="contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <main>
+    <main class="left">
         <h2>
             New Web System Design
         </h2>
@@ -221,11 +241,11 @@
         <p>
             Deakinsoft expert designs and developers are creative and eager to work with you to provide best solutions to meet your needs.
         </p>
+        <footer>
+            <small><em>Copyright © 2017 Deakinsoft Pty Ltd.</em></small>
+        </footer>
     </main>
 
-    <footer>
-        <small><em>Copyright © 2017 Deakinsoft Pty Ltd.</em></small>
-    </footer>
 </div>
 </body>
 
